@@ -1,0 +1,35 @@
+Package: chiplot
+Type: Package
+Title: Chi-Plots for Assessing Bivariate and Multivariate Dependence
+Version: 0.1.0
+Authors@R: c(
+    person("Nicholas I.", "Fisher", email = "nif@valuemetrics.com.au",
+           role = c("aut", "cre", "cph")),
+    person("Alan J.", "Lee", role = "aut"),
+    person("ValueMetrics Australia", role = "cph",
+           comment = "copyright holder of the geochem data"))
+Description: Graphical methods for assessing dependence. The chi-plot of
+    Fisher and Switzer (1985) <doi:10.1093/biomet/72.2.253> and
+    (2001) <doi:10.1198/000313001317098248> supplements a scatterplot of two
+    variables, producing characteristic patterns for different forms of
+    association. Its multivariate extension (Fisher and Lee, 2026) uses
+    generalized orthants and data depth to explore whether a multivariate
+    distribution factorizes into independent blocks of variables, with
+    permutation tests and guidelines. Functions are provided for single
+    chi-plots, a scatterplot matrix with chi-plots above the diagonal,
+    multivariate chi-plots for a given partition of the variables, and a
+    search over all partitions. Computation-intensive parts are written in C.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: graphics, grDevices, stats
+Suggests: fda.usc
+LazyData: true
+NeedsCompilation: yes
+Packaged: 2026-10-23 04:35:39 UTC; Nick
+Author: Nicholas I. Fisher [aut, cre, cph],
+  Alan J. Lee [aut],
+  ValueMetrics Australia [cph] (copyright holder of the geochem data)
+Maintainer: Nicholas I. Fisher <nif@valuemetrics.com.au>
+Repository: CRAN
+Date/Publication: 2026-11-06 17:10:11 UTC

@@ -1,0 +1,16 @@
+useDynLib(chiplot, .registration = TRUE)
+
+export(chiplot, chivals, chipairs, chimult, chipart, chidepth, chi.partitions)
+
+S3method(plot, chiplot)
+S3method(print, chiplot)
+S3method(plot, chimult)
+S3method(print, chimult)
+S3method(plot, chipart)
+S3method(print, chipart)
+
+importFrom(graphics, abline, axis, box, mtext, par, plot, plot.new, plot.window,
+           points, text, title)
+importFrom(grDevices, dev.interactive, devAskNewPage)
+importFrom(stats, complete.cases, ecdf, IQR, ks.test, mad, median, qnorm, quantile,
+           rnorm, runif, sd)
